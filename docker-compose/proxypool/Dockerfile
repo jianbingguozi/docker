@@ -1,6 +1,7 @@
 FROM alpine
 WORKDIR /data/
 RUN sed -i "s/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g" /etc/apk/repositories
+RUN apk add --no-cache --virtual tzdata
 COPY proxypool-linux-amd64 /data/proxypool
 COPY config /data/config
 RUN chmod +x /data/proxypool

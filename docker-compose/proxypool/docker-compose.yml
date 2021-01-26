@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  proxypool:
+    build: .
+    ports:
+    - 12580:12580
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200k" # 单个文件大小为200k
+        max-file: "10" # 最多10个文件

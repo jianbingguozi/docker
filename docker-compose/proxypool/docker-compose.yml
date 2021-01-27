@@ -1,7 +1,10 @@
 version: "3.8"
 services:
   proxypool:
-    build: .
+    build:
+      context: .
+      args:
+        - http_proxy=http://10.8.2.151:7890
     ports:
     - 12580:12580
     logging:

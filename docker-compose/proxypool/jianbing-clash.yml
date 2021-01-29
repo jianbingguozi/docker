@@ -41,7 +41,7 @@ proxy-groups:
 proxy-providers:
   all:
     type: http
-    url: "http://jianbing-vm:12580/clash/proxies"
+    url: "https://gitee.com/jianbing_guozi/public-static/raw/master/all.pub"
     path: jianbing-vm/provider.yaml
     health-check:
       enable: true
